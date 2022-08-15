@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tool {
+        maven 'maven'
+    }
     environment {
         registry = "pxrn/vproapp"
         registryCredential = "dockerhub"
